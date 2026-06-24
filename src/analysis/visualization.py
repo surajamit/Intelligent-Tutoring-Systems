@@ -5,7 +5,7 @@ Author: Amit Pimpalkar
 Organization: RBU, Nagpur
 Year: 2026
 
-Generates Figures 4-7 and other plots for accuracy, disparity, engagement,
+Plots for accuracy, disparity, engagement,
 equity stability, counterfactual divergence, attention alignment,
 Pareto balance, policy retention, and composite scores.
 """
@@ -29,7 +29,7 @@ def set_style():
 
 def plot_accuracy_comparison(accuracy_df: pd.DataFrame, output_path: Optional[Path] = None):
     """
-    Figure 4: Model's Integrated Accuracy Analysis (Table 1 + bar chart).
+    Model's Integrated Accuracy Analysis (bar chart).
 
     Args:
         accuracy_df: DataFrame with columns ['Dataset', 'Decision Trees', 'Gamification', 'ML', 'Proposed Model']
@@ -70,7 +70,7 @@ def plot_accuracy_comparison(accuracy_df: pd.DataFrame, output_path: Optional[Pa
 
 def plot_disparity_reduction(disparity_df: pd.DataFrame, output_path: Optional[Path] = None):
     """
-    Figure 5: Model's Disparity Analysis (Table 2) – line or bar chart.
+    Model's Disparity Analysis (bar chart).
     """
     set_style()
     fig, ax = plt.subplots(figsize=(8, 5))
@@ -105,7 +105,7 @@ def plot_disparity_reduction(disparity_df: pd.DataFrame, output_path: Optional[P
 
 def plot_engagement_retention(engagement_df: pd.DataFrame, output_path: Optional[Path] = None):
     """
-    Figure 6: Model's Integrated Engagement Analysis (Table 3).
+    Model's Integrated Engagement Analysis.
     """
     set_style()
     fig, ax = plt.subplots(figsize=(8, 5))
@@ -141,7 +141,7 @@ def plot_engagement_retention(engagement_df: pd.DataFrame, output_path: Optional
 
 def plot_equity_stability(equity_df: pd.DataFrame, output_path: Optional[Path] = None):
     """
-    Equity Stability Index (Table 4) – lower is better.
+    Equity Stability Index (lower is better).
     """
     set_style()
     fig, ax = plt.subplots(figsize=(8, 5))
@@ -176,7 +176,7 @@ def plot_equity_stability(equity_df: pd.DataFrame, output_path: Optional[Path] =
 
 def plot_counterfactual_divergence(div_df: pd.DataFrame, output_path: Optional[Path] = None):
     """
-    Counterfactual Trajectory Divergence (Table 5).
+    Counterfactual Trajectory Divergence.
     """
     set_style()
     fig, ax = plt.subplots(figsize=(8, 5))
@@ -211,7 +211,7 @@ def plot_counterfactual_divergence(div_df: pd.DataFrame, output_path: Optional[P
 
 def plot_attention_alignment(attention_df: pd.DataFrame, output_path: Optional[Path] = None):
     """
-    Attention Fairness Alignment Score (Table 6).
+    Attention Fairness Alignment Score
     """
     set_style()
     fig, ax = plt.subplots(figsize=(8, 5))
@@ -247,7 +247,7 @@ def plot_attention_alignment(attention_df: pd.DataFrame, output_path: Optional[P
 
 def plot_pareto_balance(pareto_df: pd.DataFrame, output_path: Optional[Path] = None):
     """
-    Pareto Optimization Balance Score (Table 7).
+    Pareto Optimization Balance Score
     """
     set_style()
     fig, ax = plt.subplots(figsize=(8, 5))
@@ -283,7 +283,7 @@ def plot_pareto_balance(pareto_df: pd.DataFrame, output_path: Optional[Path] = N
 
 def plot_policy_retention(retention_df: pd.DataFrame, output_path: Optional[Path] = None):
     """
-    Policy Distillation Equity Retention Ratio (Table 8).
+    Policy Distillation Equity Retention Ratio
     """
     set_style()
     fig, ax = plt.subplots(figsize=(8, 5))
@@ -319,8 +319,8 @@ def plot_policy_retention(retention_df: pd.DataFrame, output_path: Optional[Path
 
 def plot_composite_scores(composite_df: pd.DataFrame, output_path: Optional[Path] = None):
     """
-    Composite Equity-Accuracy-Engagement Score (Table 9).
-    Figure 7: Model's Overall Result Analysis.
+    Composite Equity-Accuracy-Engagement Score
+    Model's Overall Result Analysis.
     """
     set_style()
     fig, ax = plt.subplots(figsize=(8, 5))
@@ -356,7 +356,7 @@ def plot_composite_scores(composite_df: pd.DataFrame, output_path: Optional[Path
 
 def generate_all_figures(result_dir: Path, output_dir: Path, table_data: Dict[str, pd.DataFrame]):
     """
-    Generate all figures from the manuscript.
+    Generate all plots figures in folder.
 
     Args:
         result_dir: Directory containing result CSVs (or using table_data)
