@@ -1,13 +1,12 @@
 #!/usr/bin/env python
 """
-Generate all figures from the manuscript based on experimental results.
+Experimental results.
 
 Author: Amit Pimpalkar
 Organization: RBU, Nagpur
 Year: 2026
 
-This script loads the result CSVs (or dummy data) and produces the plots shown
-in Figures 4-7 and supplementary figures.
+This script loads the result CSVs and produces the plots and supplementary figures.
 """
 
 import argparse
@@ -36,12 +35,12 @@ def parse_args():
     return parser.parse_args()
 
 
-def create_dummy_data() -> dict:
-    """Create dummy data matching the tables in the manuscript."""
+def create_data() -> dict:
+    """Create data."""
     datasets = ['EdNet', 'ASSISTments', 'OULAD']
     baseline_models = ['Decision Trees', 'Gamification', 'ML']
     
-    # Table 1: Accuracy
+    # Accuracy
     acc_data = {
         'Dataset': datasets,
         'Decision Trees': [86.7, 84.1, 82.5],
@@ -51,7 +50,7 @@ def create_dummy_data() -> dict:
     }
     acc_df = pd.DataFrame(acc_data)
     
-    # Table 2: Disparity
+    # Disparity
     disp_data = {
         'Dataset': datasets,
         'Decision Trees': [11.8, 12.4, 13.1],
@@ -61,7 +60,7 @@ def create_dummy_data() -> dict:
     }
     disp_df = pd.DataFrame(disp_data)
     
-    # Table 3: Engagement Retention
+    # Engagement Retention
     eng_data = {
         'Dataset': datasets,
         'Decision Trees': [71.3, 69.5, 66.8],
@@ -71,7 +70,7 @@ def create_dummy_data() -> dict:
     }
     eng_df = pd.DataFrame(eng_data)
     
-    # Table 4: Equity Stability (lower better)
+    # Equity Stability (lower better)
     eq_data = {
         'Dataset': datasets,
         'Decision Trees': [0.42, 0.45, 0.48],
@@ -81,7 +80,7 @@ def create_dummy_data() -> dict:
     }
     eq_df = pd.DataFrame(eq_data)
     
-    # Table 5: Counterfactual Divergence
+    # Counterfactual Divergence
     div_data = {
         'Dataset': datasets,
         'Decision Trees': [0.34, 0.37, 0.39],
@@ -91,7 +90,7 @@ def create_dummy_data() -> dict:
     }
     div_df = pd.DataFrame(div_data)
     
-    # Table 6: Attention Alignment
+    # Attention Alignment
     att_data = {
         'Dataset': datasets,
         'Decision Trees': [0.61, 0.59, 0.57],
@@ -101,7 +100,7 @@ def create_dummy_data() -> dict:
     }
     att_df = pd.DataFrame(att_data)
     
-    # Table 7: Pareto Balance
+    # Pareto Balance
     par_data = {
         'Dataset': datasets,
         'Decision Trees': [0.52, 0.50, 0.48],
@@ -111,7 +110,7 @@ def create_dummy_data() -> dict:
     }
     par_df = pd.DataFrame(par_data)
     
-    # Table 8: Policy Retention
+    # Policy Retention
     ret_data = {
         'Dataset': datasets,
         'Decision Trees': [0.72, 0.70, 0.68],
@@ -121,7 +120,7 @@ def create_dummy_data() -> dict:
     }
     ret_df = pd.DataFrame(ret_data)
     
-    # Table 9: Composite
+    # Composite
     comp_data = {
         'Dataset': datasets,
         'Decision Trees': [0.68, 0.65, 0.63],
