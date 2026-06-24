@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 """
-Equity-Preserving Policy Distillation (EPPDV) as per Equation 13-14.
+Equity-Preserving Policy Distillation (EPPDV).
 
 Author: Amit Pimpalkar
 Organization: RBU, Nagpur
