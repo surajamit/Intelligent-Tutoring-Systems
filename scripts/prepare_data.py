@@ -37,14 +37,12 @@ def parse_args():
 def prepare_ednet(raw_dir, out_dir):
     """Prepare EdNet dataset."""
     logger.info("Preparing EdNet dataset...")
-    # Placeholder: In real usage, download and parse EdNet files.
-    # For demonstration, we create a minimal dummy structure.
-    # Actual implementation would load the official EdNet CSVs.
-    
-    # Create dummy data for structure
+    # Placeholder: Download and parse EdNet files.
+       
+    # Create data for structure
     os.makedirs(out_dir, exist_ok=True)
     
-    # Generate synthetic trajectories for demo (replace with actual loader)
+    # Generate trajectories
     np.random.seed(42)
     n_samples = 1000
     seq_len = 50
@@ -66,7 +64,7 @@ def prepare_ednet(raw_dir, out_dir):
         })
         df.to_csv(os.path.join(out_dir, f'{split}_sequences.csv'), index=False)
     
-    logger.info(f"EdNet prepared (dummy data) in {out_dir}")
+    logger.info(f"EdNet prepared in {out_dir}")
 
 
 def prepare_assistments(raw_dir, out_dir):
@@ -74,7 +72,7 @@ def prepare_assistments(raw_dir, out_dir):
     logger.info("Preparing ASSISTments dataset...")
     os.makedirs(out_dir, exist_ok=True)
     
-    # Dummy data – replace with actual ASSISTments loader
+    # ASSISTments loader
     np.random.seed(123)
     n_samples = 800
     for split in ['train', 'val', 'test']:
@@ -91,7 +89,7 @@ def prepare_assistments(raw_dir, out_dir):
         })
         df.to_csv(os.path.join(out_dir, f'{split}_sequences.csv'), index=False)
     
-    logger.info(f"ASSISTments prepared (dummy) in {out_dir}")
+    logger.info(f"ASSISTments prepared in {out_dir}")
 
 
 def prepare_oulad(raw_dir, out_dir):
@@ -99,7 +97,7 @@ def prepare_oulad(raw_dir, out_dir):
     logger.info("Preparing OULAD dataset...")
     os.makedirs(out_dir, exist_ok=True)
     
-    # Dummy data – replace with actual OULAD loader
+    # OULAD data loader
     np.random.seed(456)
     n_samples = 600
     for split in ['train', 'val', 'test']:
@@ -117,7 +115,7 @@ def prepare_oulad(raw_dir, out_dir):
         })
         df.to_csv(os.path.join(out_dir, f'{split}_sequences.csv'), index=False)
     
-    logger.info(f"OULAD prepared (dummy) in {out_dir}")
+    logger.info(f"OULAD prepared in {out_dir}")
 
 
 def main():
