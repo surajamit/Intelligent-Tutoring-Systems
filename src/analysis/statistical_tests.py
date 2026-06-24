@@ -5,8 +5,7 @@ Author: Amit Pimpalkar
 Organization: RBU, Nagpur
 Year: 2026
 
-Implements paired t-tests and Wilcoxon signed-rank tests as described in the
-manuscript (Section 4: Validated Hyperparameter & Baseline Detailed Analysis).
+Implements paired t-tests and Wilcoxon signed-rank tests, Validated Hyperparameter & Baseline Detailed Analysis.
 """
 
 import numpy as np
