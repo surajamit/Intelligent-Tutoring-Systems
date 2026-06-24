@@ -7,7 +7,7 @@ Organization: RBU, Nagpur
 Year: 2026
 
 Searches over learning rate, hidden dimensions, attention heads, and
-equity regularization coefficients as described in the manuscript.
+equity regularization coefficients.
 """
 
 import argparse
