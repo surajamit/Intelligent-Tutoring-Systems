@@ -51,7 +51,7 @@ def create_ablation_model(config: dict, disable_components: list) -> IntegratedM
         disable_components: List of strings: 'dsge', 'cern', 'ewfaf', 'pareto', 'distillation'
     
     Returns:
-        Modified model (some modules may be set to identity or bypassed)
+        Modified model 
     """
     # We'll modify the model class on the fly; for simplicity we create a wrapper.
     # In a full implementation, we would subclass IntegratedMultiObjectiveTutor
@@ -157,7 +157,7 @@ def run_ablation(config, dataset_name, output_dir, epochs, seed):
         'no_pareto': ['pareto'],  # will use fixed weights
         'no_distillation': ['distillation']  # not used in training, just for final evaluation
     }
-    # We'll also add a variant without both dsge and cern (optional)
+    # We'll also add a variant without both dsge and cern 
     
     results = {}
     
