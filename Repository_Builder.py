@@ -28,7 +28,9 @@ def build():
     # ------------------------------------------------------------
     write_file(f"{base}/README.md", """# Multi-Objective Deep Optimization for Equity-Aware Intelligent Tutoring Systems
 
-This repository implements an integrated framework for simultaneously optimizing learning accuracy, demographic equity, and learner engagement in AI-driven educational platforms. The architecture treats fairness as a first‑class optimization signal rather than a post‑hoc correction.
+This repository implements an integrated framework for simultaneously optimizing learning accuracy, 
+demographic equity, and learner engagement in AI-driven educational platforms. 
+The architecture treats fairness as a first‑class optimization signal rather than a post‑hoc correction.
 
 ## Key Innovations
 - **Demographic Sensitivity Gradient Encoding (DSGE)**: Quantifies demographic influence at the gradient level.
