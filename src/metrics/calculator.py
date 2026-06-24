@@ -1,5 +1,5 @@
 """
-Implementation of all quantitative metrics defined in the manuscript (Tables 1-9).
+Implementation of all quantitative metrics.
 
 Author: Amit Pimpalkar
 Organization: RBU, Nagpur
@@ -11,7 +11,7 @@ from typing import Dict, List, Tuple, Optional
 
 
 def compute_accuracy(predictions: np.ndarray, targets: np.ndarray, threshold: float = 0.5) -> float:
-    """Overall learning accuracy (Table 1)."""
+    """Overall learning accuracy."""
     pred_binary = (predictions > threshold).astype(int)
     return np.mean(pred_binary == targets)
 
@@ -19,7 +19,7 @@ def compute_accuracy(predictions: np.ndarray, targets: np.ndarray, threshold: fl
 def compute_demographic_disparity(predictions: np.ndarray, targets: np.ndarray,
                                   demographic_groups: np.ndarray) -> Dict[str, float]:
     """
-    Compute demographic learning gain disparity (Table 2).
+    Compute demographic learning gain disparity.
     Returns the disparity as max-min difference across groups.
     """
     group_accuracies = {}
@@ -42,7 +42,7 @@ def compute_demographic_disparity(predictions: np.ndarray, targets: np.ndarray,
 
 def compute_equity_stability_index(equity_loss_trajectory: np.ndarray) -> float:
     """
-    Temporal volatility of equity measurements (Table 4). Lower is better.
+    Temporal volatility of equity measurements (Lower is better).
     Computed as the standard deviation of the first-order differences.
     """
     if len(equity_loss_trajectory) < 2:
@@ -54,7 +54,7 @@ def compute_equity_stability_index(equity_loss_trajectory: np.ndarray) -> float:
 def compute_counterfactual_divergence(factual_outcomes: np.ndarray,
                                       counterfactual_outcomes: np.ndarray) -> float:
     """
-    Mean Absolute Error between factual and counterfactual trajectories (Table 5).
+    Mean Absolute Error between factual and counterfactual trajectories.
     """
     return np.mean(np.abs(factual_outcomes - counterfactual_outcomes))
 
@@ -63,8 +63,7 @@ def compute_attention_alignment(attention_weights: np.ndarray,
                                 equity_residuals: np.ndarray,
                                 threshold: float = 0.01) -> float:
     """
-    Correlation between attention focus and equity risk regions (Table 6).
-    Higher is better.
+    Correlation between attention focus and equity risk regions (Higher is better).
     """
     # Flatten and normalize
     att_flat = attention_weights.flatten()
@@ -81,7 +80,7 @@ def compute_attention_alignment(attention_weights: np.ndarray,
 
 def compute_pareto_balance_score(loss_history: Dict[str, List[float]]) -> float:
     """
-    Stability of multi-objective trade-offs (Table 7).
+    Stability of multi-objective trade-offs.
     Lower variance across objectives indicates better balance.
     """
     if not loss_history:
@@ -106,7 +105,7 @@ def compute_pareto_balance_score(loss_history: Dict[str, List[float]]) -> float:
 def compute_equity_retention_ratio(student_equity_loss: float,
                                    teacher_equity_loss: float) -> float:
     """
-    Equity preservation after distillation (Table 8).
+    Equity preservation after distillation.
     """
     if teacher_equity_loss == 0:
         return 1.0
@@ -116,7 +115,7 @@ def compute_equity_retention_ratio(student_equity_loss: float,
 def compute_composite_score(accuracy: float, equity_metric: float,
                             engagement: float, weights: Tuple[float, float, float] = (0.4, 0.35, 0.25)) -> float:
     """
-    Weighted composite score (Table 9).
+    Weighted composite score.
     equity_metric here should be normalized (e.g., 1 - disparity or 1 - stability_index).
     """
     return weights[0] * accuracy + weights[1] * equity_metric + weights[2] * engagement
