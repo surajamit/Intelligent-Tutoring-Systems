@@ -1,0 +1,35 @@
+# Ablation Study Configuration
+# Defines which components to disable for each variant
+
+variants:
+  full:
+    description: "Full model with all components"
+    disable: []
+  
+  no_dsge:
+    description: "Without Demographic Sensitivity Gradient Encoding"
+    disable: ["dsge"]
+  
+  no_cern:
+    description: "Without Counterfactual Equity Replay Networks"
+    disable: ["cern"]
+  
+  no_ewfaf:
+    description: "Without Engagement-Weighted Fairness Attention"
+    disable: ["ewfaf"]
+  
+  no_pareto:
+    description: "Without Pareto-Adaptive controller (fixed weights)"
+    disable: ["pareto"]
+  
+  no_equity_signals:
+    description: "Without any equity modeling (DSGE + CERN + EWFAF)"
+    disable: ["dsge", "cern", "ewfaf"]
+  
+  no_engagement:
+    description: "Without engagement optimization"
+    disable: ["ewfaf"]  # Simplified; in practice, engagement loss weight set to 0
+
+defaults:
+  epochs_per_variant: 20
+  random_seed: 42

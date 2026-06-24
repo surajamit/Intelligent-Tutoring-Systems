@@ -1,0 +1,59 @@
+# Dataset Configuration
+# Author: Amit Pimpalkar
+# Organization: RBU, Nagpur
+# Year: 2026
+
+ednet:
+  raw_data_dir: "data/raw/ednet/"
+  processed_dir: "data/processed/ednet/"
+  interaction_file: "interactions_train.csv"
+  demographic_file: "student_metadata.csv"
+  min_sequence_length: 10
+  max_sequence_length: 200
+  feature_columns:
+    - "problem_id"
+    - "correctness"
+    - "response_time"
+    - "hint_count"
+    - "attempt_number"
+  demographic_columns:
+    - "language_group"
+    - "access_index"
+    - "prior_exposure"
+    - "age_category"
+
+assistments:
+  raw_data_dir: "data/raw/assistments/"
+  processed_dir: "data/processed/assistments/"
+  interaction_file: "skill_builder_data.csv"
+  affect_annotations: "affect_labels.csv"
+  min_sequence_length: 5
+  max_sequence_length: 150
+  feature_columns:
+    - "skill_id"
+    - "correct"
+    - "ms_first_response"
+    - "hint_total"
+    - "overlap_time"
+  demographic_columns:
+    - "gender"
+    - "prior_skills"
+
+oulad:
+  raw_data_dir: "data/raw/oulad/"
+  processed_dir: "data/processed/oulad/"
+  interaction_file: "studentVle.csv"
+  registration_file: "studentInfo.csv"
+  assessment_file: "studentAssessment.csv"
+  min_sequence_length: 8
+  max_sequence_length: 180
+  feature_columns:
+    - "activity_type"
+    - "sum_click"
+    - "date"
+  demographic_columns:
+    - "gender"
+    - "region"
+    - "highest_education"
+    - "imd_band"
+    - "age_band"
