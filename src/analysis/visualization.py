@@ -1,5 +1,5 @@
 """
-Visualization functions to reproduce the figures from the manuscript.
+Visualization functions.
 
 Author: Amit Pimpalkar
 Organization: RBU, Nagpur
@@ -370,11 +370,11 @@ def generate_all_figures(result_dir: Path, output_dir: Path, table_data: Dict[st
     # For demonstration, we assume table_data is provided.
     
     if 'accuracy' in table_data:
-        plot_accuracy_comparison(table_data['accuracy'], output_dir / 'figure4_accuracy.png')
+        plot_accuracy_comparison(table_data['accuracy'], output_dir / 'accuracy.png')
     if 'disparity' in table_data:
-        plot_disparity_reduction(table_data['disparity'], output_dir / 'figure5_disparity.png')
+        plot_disparity_reduction(table_data['disparity'], output_dir / 'disparity.png')
     if 'engagement' in table_data:
-        plot_engagement_retention(table_data['engagement'], output_dir / 'figure6_engagement.png')
+        plot_engagement_retention(table_data['engagement'], output_dir / 'engagement.png')
     if 'equity' in table_data:
         plot_equity_stability(table_data['equity'], output_dir / 'equity_stability.png')
     if 'divergence' in table_data:
@@ -386,6 +386,6 @@ def generate_all_figures(result_dir: Path, output_dir: Path, table_data: Dict[st
     if 'retention' in table_data:
         plot_policy_retention(table_data['retention'], output_dir / 'policy_retention.png')
     if 'composite' in table_data:
-        plot_composite_scores(table_data['composite'], output_dir / 'figure7_composite.png')
+        plot_composite_scores(table_data['composite'], output_dir / 'composite.png')
     
     print(f"All figures saved to {output_dir}")
