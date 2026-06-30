@@ -1,7 +1,8 @@
 @article{pimpalkar2026equity,
   title={Multi-Objective Deep Optimization of Equity, Accuracy, and Engagement in Intelligent Tutoring Systems},
-  author={Pimpalkar, Amit},
-  journal={},
+  author={Amreen Habibullah Khan1, Amit Pimpalkar2, Tabassum H. Khan3, Sachin Subhashrao Patil4, Nilesh Shelke5, Harika Vanam6},
+  journal={Scientific Reports},
   year={2026},
-  publisher={}
+  vol={16},
+  publisher={Nature Portfolio}
 }
