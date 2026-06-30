@@ -1,0 +1,109 @@
+metric,table_no,dataset,method,value,higher_is_better
+Overall Learning Accuracy (%),1,EdNet,Decision Trees [3],86.7,True
+Overall Learning Accuracy (%),1,EdNet,Gamification [8],89.4,True
+Overall Learning Accuracy (%),1,EdNet,ML [30],91.2,True
+Overall Learning Accuracy (%),1,EdNet,Proposed Model,94.8,True
+Overall Learning Accuracy (%),1,ASSISTments,Decision Trees [3],84.1,True
+Overall Learning Accuracy (%),1,ASSISTments,Gamification [8],87.6,True
+Overall Learning Accuracy (%),1,ASSISTments,ML [30],89.3,True
+Overall Learning Accuracy (%),1,ASSISTments,Proposed Model,93.1,True
+Overall Learning Accuracy (%),1,OULAD,Decision Trees [3],82.5,True
+Overall Learning Accuracy (%),1,OULAD,Gamification [8],85.2,True
+Overall Learning Accuracy (%),1,OULAD,ML [30],87.9,True
+Overall Learning Accuracy (%),1,OULAD,Proposed Model,92.4,True
+Demographic Learning Gain Disparity (%),2,EdNet,Decision Trees [3],11.8,False
+Demographic Learning Gain Disparity (%),2,EdNet,Gamification [8],9.6,False
+Demographic Learning Gain Disparity (%),2,EdNet,ML [30],8.3,False
+Demographic Learning Gain Disparity (%),2,EdNet,Proposed Model,3.9,False
+Demographic Learning Gain Disparity (%),2,ASSISTments,Decision Trees [3],12.4,False
+Demographic Learning Gain Disparity (%),2,ASSISTments,Gamification [8],10.1,False
+Demographic Learning Gain Disparity (%),2,ASSISTments,ML [30],8.9,False
+Demographic Learning Gain Disparity (%),2,ASSISTments,Proposed Model,4.2,False
+Demographic Learning Gain Disparity (%),2,OULAD,Decision Trees [3],13.1,False
+Demographic Learning Gain Disparity (%),2,OULAD,Gamification [8],10.8,False
+Demographic Learning Gain Disparity (%),2,OULAD,ML [30],9.5,False
+Demographic Learning Gain Disparity (%),2,OULAD,Proposed Model,4.6,False
+Engagement Retention Rate (%),3,EdNet,Decision Trees [3],71.3,True
+Engagement Retention Rate (%),3,EdNet,Gamification [8],83.9,True
+Engagement Retention Rate (%),3,EdNet,ML [30],78.4,True
+Engagement Retention Rate (%),3,EdNet,Proposed Model,89.6,True
+Engagement Retention Rate (%),3,ASSISTments,Decision Trees [3],69.5,True
+Engagement Retention Rate (%),3,ASSISTments,Gamification [8],81.2,True
+Engagement Retention Rate (%),3,ASSISTments,ML [30],76.8,True
+Engagement Retention Rate (%),3,ASSISTments,Proposed Model,88.1,True
+Engagement Retention Rate (%),3,OULAD,Decision Trees [3],66.8,True
+Engagement Retention Rate (%),3,OULAD,Gamification [8],79.6,True
+Engagement Retention Rate (%),3,OULAD,ML [30],75.1,True
+Engagement Retention Rate (%),3,OULAD,Proposed Model,86.9,True
+Equity Stability Index,4,EdNet,Decision Trees [3],0.42,False
+Equity Stability Index,4,EdNet,Gamification [8],0.36,False
+Equity Stability Index,4,EdNet,ML [30],0.31,False
+Equity Stability Index,4,EdNet,Proposed Model,0.18,False
+Equity Stability Index,4,ASSISTments,Decision Trees [3],0.45,False
+Equity Stability Index,4,ASSISTments,Gamification [8],0.39,False
+Equity Stability Index,4,ASSISTments,ML [30],0.34,False
+Equity Stability Index,4,ASSISTments,Proposed Model,0.2,False
+Equity Stability Index,4,OULAD,Decision Trees [3],0.48,False
+Equity Stability Index,4,OULAD,Gamification [8],0.41,False
+Equity Stability Index,4,OULAD,ML [30],0.37,False
+Equity Stability Index,4,OULAD,Proposed Model,0.22,False
+Counterfactual Trajectory Divergence,5,EdNet,Decision Trees [3],0.34,False
+Counterfactual Trajectory Divergence,5,EdNet,Gamification [8],0.29,False
+Counterfactual Trajectory Divergence,5,EdNet,ML [30],0.25,False
+Counterfactual Trajectory Divergence,5,EdNet,Proposed Model,0.11,False
+Counterfactual Trajectory Divergence,5,ASSISTments,Decision Trees [3],0.37,False
+Counterfactual Trajectory Divergence,5,ASSISTments,Gamification [8],0.31,False
+Counterfactual Trajectory Divergence,5,ASSISTments,ML [30],0.27,False
+Counterfactual Trajectory Divergence,5,ASSISTments,Proposed Model,0.13,False
+Counterfactual Trajectory Divergence,5,OULAD,Decision Trees [3],0.39,False
+Counterfactual Trajectory Divergence,5,OULAD,Gamification [8],0.33,False
+Counterfactual Trajectory Divergence,5,OULAD,ML [30],0.29,False
+Counterfactual Trajectory Divergence,5,OULAD,Proposed Model,0.15,False
+Attention Fairness Alignment Score,6,EdNet,Decision Trees [3],0.61,True
+Attention Fairness Alignment Score,6,EdNet,Gamification [8],0.68,True
+Attention Fairness Alignment Score,6,EdNet,ML [30],0.71,True
+Attention Fairness Alignment Score,6,EdNet,Proposed Model,0.87,True
+Attention Fairness Alignment Score,6,ASSISTments,Decision Trees [3],0.59,True
+Attention Fairness Alignment Score,6,ASSISTments,Gamification [8],0.66,True
+Attention Fairness Alignment Score,6,ASSISTments,ML [30],0.69,True
+Attention Fairness Alignment Score,6,ASSISTments,Proposed Model,0.85,True
+Attention Fairness Alignment Score,6,OULAD,Decision Trees [3],0.57,True
+Attention Fairness Alignment Score,6,OULAD,Gamification [8],0.64,True
+Attention Fairness Alignment Score,6,OULAD,ML [30],0.67,True
+Attention Fairness Alignment Score,6,OULAD,Proposed Model,0.83,True
+Pareto Optimization Balance Score,7,EdNet,Decision Trees [3],0.52,True
+Pareto Optimization Balance Score,7,EdNet,Gamification [8],0.63,True
+Pareto Optimization Balance Score,7,EdNet,ML [30],0.68,True
+Pareto Optimization Balance Score,7,EdNet,Proposed Model,0.89,True
+Pareto Optimization Balance Score,7,ASSISTments,Decision Trees [3],0.5,True
+Pareto Optimization Balance Score,7,ASSISTments,Gamification [8],0.61,True
+Pareto Optimization Balance Score,7,ASSISTments,ML [30],0.66,True
+Pareto Optimization Balance Score,7,ASSISTments,Proposed Model,0.87,True
+Pareto Optimization Balance Score,7,OULAD,Decision Trees [3],0.48,True
+Pareto Optimization Balance Score,7,OULAD,Gamification [8],0.59,True
+Pareto Optimization Balance Score,7,OULAD,ML [30],0.65,True
+Pareto Optimization Balance Score,7,OULAD,Proposed Model,0.85,True
+Policy Distillation Equity Retention Ratio,8,EdNet,Decision Trees [3],0.72,True
+Policy Distillation Equity Retention Ratio,8,EdNet,Gamification [8],0.81,True
+Policy Distillation Equity Retention Ratio,8,EdNet,ML [30],0.85,True
+Policy Distillation Equity Retention Ratio,8,EdNet,Proposed Model,0.96,True
+Policy Distillation Equity Retention Ratio,8,ASSISTments,Decision Trees [3],0.7,True
+Policy Distillation Equity Retention Ratio,8,ASSISTments,Gamification [8],0.79,True
+Policy Distillation Equity Retention Ratio,8,ASSISTments,ML [30],0.83,True
+Policy Distillation Equity Retention Ratio,8,ASSISTments,Proposed Model,0.95,True
+Policy Distillation Equity Retention Ratio,8,OULAD,Decision Trees [3],0.68,True
+Policy Distillation Equity Retention Ratio,8,OULAD,Gamification [8],0.77,True
+Policy Distillation Equity Retention Ratio,8,OULAD,ML [30],0.82,True
+Policy Distillation Equity Retention Ratio,8,OULAD,Proposed Model,0.94,True
+Composite Equity–Accuracy–Engagement Score,9,EdNet,Decision Trees [3],0.68,True
+Composite Equity–Accuracy–Engagement Score,9,EdNet,Gamification [8],0.75,True
+Composite Equity–Accuracy–Engagement Score,9,EdNet,ML [30],0.78,True
+Composite Equity–Accuracy–Engagement Score,9,EdNet,Proposed Model,0.92,True
+Composite Equity–Accuracy–Engagement Score,9,ASSISTments,Decision Trees [3],0.65,True
+Composite Equity–Accuracy–Engagement Score,9,ASSISTments,Gamification [8],0.73,True
+Composite Equity–Accuracy–Engagement Score,9,ASSISTments,ML [30],0.76,True
+Composite Equity–Accuracy–Engagement Score,9,ASSISTments,Proposed Model,0.9,True
+Composite Equity–Accuracy–Engagement Score,9,OULAD,Decision Trees [3],0.63,True
+Composite Equity–Accuracy–Engagement Score,9,OULAD,Gamification [8],0.71,True
+Composite Equity–Accuracy–Engagement Score,9,OULAD,ML [30],0.75,True
+Composite Equity–Accuracy–Engagement Score,9,OULAD,Proposed Model,0.88,True
