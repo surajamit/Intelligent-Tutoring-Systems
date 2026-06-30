@@ -367,8 +367,7 @@ def generate_all_figures(result_dir: Path, output_dir: Path, table_data: Dict[st
     output_dir.mkdir(parents=True, exist_ok=True)
     
     # Use provided data or load from CSV if available
-    # For demonstration, we assume table_data is provided.
-    
+       
     if 'accuracy' in table_data:
         plot_accuracy_comparison(table_data['accuracy'], output_dir / 'accuracy.png')
     if 'disparity' in table_data:
