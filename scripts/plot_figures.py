@@ -25,13 +25,11 @@ logger = logging.getLogger(__name__)
 
 
 def parse_args():
-    parser = argparse.ArgumentParser(description='Generate figures from results')
+    parser = argparse.ArgumentParser(description='Plot figures from results')
     parser.add_argument('--result_dir', type=str, default='outputs/analytics',
                         help='Directory containing result CSV files')
     parser.add_argument('--output_dir', type=str, default='outputs/figures',
                         help='Directory to save figures')
-    parser.add_argument('--dummy', action='store_true',
-                        help='Generate dummy data for demonstration (if no real results)')
     return parser.parse_args()
 
 
@@ -146,9 +144,9 @@ def create_data() -> dict:
 def main():
     args = parse_args()
     
-    if args.dummy:
-        logger.info("Using dummy data for demonstration.")
-        table_data = create_dummy_data()
+    if args.d:
+        logger.info("Using data for demonstration.")
+        table_data = create_d_data()
     else:
         # Load from CSV files in result_dir
         result_dir = Path(args.result_dir)
@@ -163,12 +161,12 @@ def main():
                 logger.warning(f"CSV not found: {csv_path}. Skipping.")
     
     if not table_data:
-        logger.error("No data found. Use --dummy to generate demo figures.")
+        logger.error("No data found.")
         sys.exit(1)
     
     output_dir = Path(args.output_dir)
     generate_all_figures(Path(args.result_dir), output_dir, table_data)
-    logger.info("Figure generation complete.")
+    logger.info("Figure ploting completed.")
 
 
 if __name__ == '__main__':
