@@ -4,7 +4,7 @@ Complete Repository Builder – Final Version
 Author: Amit Pimpalkar, RBU Nagpur
 Year: 2026
 
-Generates every file of the equity‑aware tutoring system.
+Map every file of the equity‑aware tutoring system.
 Run this script to produce the full repository ZIP.
 """
 
