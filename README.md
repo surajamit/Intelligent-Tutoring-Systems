@@ -12,6 +12,14 @@ Educational AI systems increasingly influence curriculum pacing, learner confide
 - **Pareto-Adaptive Multi-Objective Controller**: Dynamically adjusts objective weights to maintain systemic balance
 - **Equity-Preserving Policy Distillation**: Compresses models while retaining fairness guarantees
 
+## Dataset Availbility
+
+Following three publically availble dataset used for the evaluation of Project Outcome
+
+1.	EdNet: https://github.com/riiid/ednet
+2.	ASSISTments : https://www.kaggle.com/datasets/nicolaswattiez/skillbuilder-data-2009-2010
+3.	OULAD: https://www.kaggle.com/datasets/dalhoumifayrouz/oulad-enriched-for-adaptive-learning
+
 ## Installation
 
 Clone the repository and install dependencies:
