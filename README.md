@@ -14,7 +14,7 @@ Educational AI systems increasingly influence curriculum pacing, learner confide
 
 ## Dataset Availbility
 
-Following three publically availble dataset used for the evaluation of Project Outcome
+The data that support the findings of this study are openly available in the following repositories:
 
 1.	EdNet: https://github.com/riiid/ednet
 2.	ASSISTments : https://www.kaggle.com/datasets/nicolaswattiez/skillbuilder-data-2009-2010
