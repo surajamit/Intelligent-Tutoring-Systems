@@ -31,34 +31,28 @@ logger = logging.getLogger(__name__)
 DATASET_INFO = {
     'ednet': {
         'urls': [
-            'https://github.com/riid/ednet/raw/master/data/train.csv',  # Placeholder
-            'https://github.com/riid/ednet/raw/master/data/student_meta.csv'
-        ],
+            'https://github.com/riiid/ednet'  # MD5
+               ],
         'checksums': {
-            'train.csv': 'd41d8cd98f00b204e9800998ecf8427e',  # Placeholder MD5
-            'student_meta.csv': 'd41d8cd98f00b204e9800998ecf8427e'
-        },
-        'description': 'EdNet - KAIST AI Lab (requires 130M interactions)'
+            'train.csv': 'd41d8cd98f00b204e9800998ecf8427e'  # MD5
+                   },
+        'description': 'EdNet - KAIST AI Lab ( 130M interactions)'
     },
     'assistments': {
         'urls': [
-            'https://sites.google.com/site/assistmentsdata/home/assistments-2012-2013-data.zip'
-        ],
+            'https://www.kaggle.com/datasets/nicolaswattiez/skillbuilder-data-2009-2010?select=2012-2013-data-with-predictions-4-final.csv'
+                ],
         'checksums': {
-            'assistments-2012-2013-data.zip': 'd41d8cd98f00b204e9800998ecf8427e'
+            '2012-2013-data-with-predictions-4-final.csv': 'd41d8cd98f00b204e9800998ecf8427e' # MD5
         },
         'description': 'ASSISTments 2012-2013 with affect annotations'
     },
     'oulad': {
         'urls': [
-            'https://www.open.ac.uk/student/analytics/static/data/oulad/studentVle.csv',
-            'https://www.open.ac.uk/student/analytics/static/data/oulad/studentInfo.csv',
-            'https://www.open.ac.uk/student/analytics/static/data/oulad/studentAssessment.csv'
+            'https://www.kaggle.com/datasets/dalhoumifayrouz/oulad-enriched-for-adaptive-learning?select=CAMLS_oulad_enriched_dataset.csv',
         ],
         'checksums': {
-            'studentVle.csv': 'd41d8cd98f00b204e9800998ecf8427e',
-            'studentInfo.csv': 'd41d8cd98f00b204e9800998ecf8427e',
-            'studentAssessment.csv': 'd41d8cd98f00b204e9800998ecf8427e'
+            'CAMLS_oulad_enriched_dataset.csv': 'd41d8cd98f00b204e9800998ecf8427e' # MD5
         },
         'description': 'OULAD - Open University Learning Analytics Dataset'
     }
@@ -197,10 +191,7 @@ def main():
         success = download_dataset(ds, raw_dir, args.force)
         if not success:
             logger.warning(f"Dataset {ds} may not be fully available. Check official repositories.")
-            logger.warning(f"  EdNet: https://github.com/riid/ednet")
-            logger.warning(f"  ASSISTments: https://sites.google.com/site/assistmentsdata/")
-            logger.warning(f"  OULAD: https://analyse.kmi.open.ac.uk/open_dataset")
-    
+                
     logger.info("Data acquisition complete. Run python scripts/prepare_data.py to process.")
 
 
