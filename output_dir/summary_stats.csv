@@ -1,5 +1,0 @@
-metric,n,mean_diff,std_diff,sem,t_statistic,df,p_value_t,w_statistic,p_value_wilcoxon,cohens_d
-Learning Gain Disparity,10,5.700000,3.094000,0.978000,5.820000,9,0.000190,0,0.001950,1.840000
-Engagement Retention,10,5.700000,3.460000,1.094000,5.210000,9,0.000400,0,0.001950,1.650000
-Prediction Accuracy,10,3.600000,1.947000,0.616000,5.840000,9,0.000190,0,0.001950,1.850000
-Equity Stability Index,10,0.130000,0.068500,0.021600,6.020000,9,0.000160,0,0.001950,1.900000
